@@ -1,0 +1,326 @@
+/* ESTILOS GENERALES*/
+*{box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1300px;
+    background-color: #e8e4e2;
+    margin: auto;
+    padding: auto;
+    font-family: 'Lora', serif;
+    color: #1D1D1A;
+}
+
+a {
+    color: #1D1D1A;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.90rem;
+}
+
+a:hover {
+    color: gray;
+}
+
+/*ESTILOS DE LA BARRA DE NAVEGACIÓN*/
+
+header {
+    background-color: none;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 45px;
+}
+
+.navbar {
+    background-color: none;
+    height: 100%;
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.navbar .navbardiv {
+    background-color: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.navbar .navbardiv a {
+    background-color: none;
+    width: 169.74px;
+    text-align: center;
+}
+
+.navbar .navbardiv .logo-a {
+    font-size: 2.10rem;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+
+/*ESTILO WEB PARA PANTALLAS PEQUEÑAS*/
+
+@media (max-width: 700px){
+    .navbardiv{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    footer div{
+        flex-direction:column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+/*ESTILOS SECCIONES DEL INDEX*/
+
+/*PRIMERA SECCIÓN INDEX*/
+
+#diseños-atemporales{
+    margin-bottom: 85px;
+}
+
+#diseños-atemporales div{
+    background-color:none;
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    }
+
+img{
+    width: 440px;
+    height: 600px;
+    margin-bottom: 85px;
+}
+
+.p-atemporales p{
+    font-size: 1.25rem;
+    width: 570px;
+    height: 64px;
+    text-align:center;
+    line-height: 175%;
+}
+
+/*SEGUNDA SECCIÓN INDEX*/
+
+#doble-imagen{
+    background-color: none;
+    display: flex;
+    justify-content: center;
+}
+
+#doble-imagen div{
+    background-color: none;
+    display:flex;
+    flex-direction: column;
+    align-content:flex-end;
+    justify-content: center;
+    height: 1400px;
+}
+
+#doble-imagen img{
+    width: 440px;
+    height: 600px;
+}
+
+/*TERCERA SECCIÓN INDEX*/
+
+#artesanales-unicas{
+    margin-bottom: 85px;
+}
+
+#artesanales-unicas div {
+    display: flex;
+    justify-content: center;
+}
+
+#artesanales-unicas div p {
+    font-size: 1.25rem;
+    width: 550px;
+    height: 64px;
+    text-align:center;
+    line-height: 175%;
+}
+
+/*CUARTA SECCIÓN INDEX*/
+
+
+#doble-imagen-colores {
+    background-color: none;
+    display: flex;
+    justify-content: center;
+}
+
+#doble-imagen-colores div{
+    background-color: none;
+    display:flex;
+    flex-direction: column;
+    align-content:flex-end;
+    justify-content: center;
+    height: 1350px;
+}
+
+/*QUINTA SECCIÓN INDEX*/
+
+#reivindicamos {
+    margin-bottom: 85px;
+}
+
+#reivindicamos div {
+    display: flex;
+    justify-content: center;
+}
+
+#reivindicamos div p {
+    font-size: 1.25rem;
+    width: 530px;
+    height: 64px;
+    text-align:center;
+    line-height: 175%;
+}
+
+/*SEXTA SECCIÓN INDEX*/
+
+#final-index {
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+#final-index div{
+    background-color: none;
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    justify-content: center;
+    text-align: center;
+    height: 1400px;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+}
+
+footer div {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+footer div .top img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.top:hover {
+    color: gray;
+}
+
+.derechos {
+    font-size: 0.90rem;
+}
+
+/* HTML DE NOSOTROS*/
+
+.nosotros-1{
+    width: 100%;
+    background-color:none;
+    display: flex;
+}
+
+.nosotros-2{
+    width: 100%;
+    display: flex;
+}
+
+.nosotros-3{
+    width: 100%;
+    display: flex;
+}
+
+/* HTML DE CONTACTO*/
+
+.p-contáctanos{
+    background-color: none;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.contact-form {
+    height: 350px;
+    background-color: none;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 150px;
+}
+
+.contáctanos {
+    height: 100%;
+    background-color:white;
+    width: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align:center;
+    padding:0;
+}
+
+.a-contacto {
+    font-size: 1rem;
+    line-height: 2;
+    padding-bottom: 18px;
+}
+
+.formulario {
+    background-color: none;
+    height: 100%;
+    width: 355px;
+    background-color:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+}
+
+.inputform {
+    background-color:none;
+    width: 100%;
+    max-width: 355px;
+    min-width: 355px;
+    height: 36px;
+    min-height: 36px;
+    font-family: 'Lora', serif;
+    color: #1D1D1A;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    border-top: hidden;
+    border-left:hidden;
+    border-right: hidden;
+}
+
+.bottonform{
+    text-decoration: underline;
+    width: 100%;
+    height: 36px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid;
+    margin-bottom: 16px;
+}
+
+.body-contacto{
+    height: 936px;
+}
