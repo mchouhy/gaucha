@@ -23,7 +23,7 @@ a:hover {
     color: gray;
 }
 
-/*ESTILOS DE LA BARRA DE NAVEGACIÓN*/
+/*ESTILOS DEL HEADER*/
 
 header {
     background-color: none;
@@ -57,8 +57,6 @@ header {
     margin-left: 60px;
     margin-right: 60px;
 }
-
-
 
 /*ESTILO WEB PARA PANTALLAS PEQUEÑAS*/
 
@@ -234,18 +232,17 @@ footer div .top img {
 
 .nosotros-1{
     width: 100%;
-    background-color:none;
-    display: flex;
+    background-color:red;
 }
 
 .nosotros-2{
     width: 100%;
-    display: flex;
+    background-color: blue;
 }
 
 .nosotros-3{
     width: 100%;
-    display: flex;
+    background-color: green;
 }
 
 /* HTML DE CONTACTO*/
