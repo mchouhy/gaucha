@@ -5,7 +5,7 @@
 body {
     width: 100%;
     max-width: 1300px;
-    background-color: #e8e4e2;
+    background-color:  #e8e4e2;
     margin: auto;
     padding: auto;
     font-family: 'Lora', serif;
@@ -23,57 +23,53 @@ a:hover {
     color: gray;
 }
 
-/*ESTILOS DEL HEADER*/
+/*ESTILOS DE LA BARRA DE NAVEGACIÓN*/
 
 header {
-    background-color: none;
+    background-color: #e8e4e2;
+    width: 100%;
     height: 160px;
-    margin-bottom: 45px;
 }
 
 .navbar {
-    background-color: none;
-    height: 100%;
+    background-color: #e8e4e2 !important;
 }
 
 
-.navbar .navbardiv {
+.navbar-brand{
+    font-size: 2.10rem;
+}
+
+.nav-item{
+    text-align: center;
+}
+
+.navbar1 {
     background-color: none;
-    width: 100%;
-    display: flex;
+    height: 100%;
+    display: grid;
     justify-content: space-evenly;
 }
 
-.navbar .navbardiv a {
+.navbar1 .navbardiv {
     background-color: none;
-    width: 150px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items:center;
 }
 
-.navbar .navbardiv .logo-a {
+.navbar1 .navbardiv a {
+    background-color: none;
+    width: 169.74px;
+    text-align: center;
+}
+
+.navbar1 .navbardiv .logo-a {
     font-size: 2.10rem;
     margin-left: 60px;
     margin-right: 60px;
 }
-
-/*ESTILO WEB PARA PANTALLAS PEQUEÑAS*/
-
-@media (max-width: 700px){
-    .navbardiv{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
     
-    footer div{
-        flex-direction:column-reverse;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-}
-
 /*ESTILOS SECCIONES DEL INDEX*/
 
 /*PRIMERA SECCIÓN INDEX*/
@@ -95,10 +91,10 @@ img{
     margin-bottom: 85px;
 }
 
+
 .p-atemporales p{
     font-size: 1.25rem;
-    width: 570px;
-    height: 64px;
+    width: 440px;
     text-align:center;
     line-height: 175%;
 }
@@ -117,12 +113,10 @@ img{
     flex-direction: column;
     align-content:flex-end;
     justify-content: center;
-    height: 1400px;
 }
 
 #doble-imagen img{
     width: 440px;
-    height: 600px;
 }
 
 /*TERCERA SECCIÓN INDEX*/
@@ -138,8 +132,7 @@ img{
 
 #artesanales-unicas div p {
     font-size: 1.25rem;
-    width: 550px;
-    height: 64px;
+    width: 440px;
     text-align:center;
     line-height: 175%;
 }
@@ -162,6 +155,8 @@ img{
     height: 1350px;
 }
 
+
+
 /*QUINTA SECCIÓN INDEX*/
 
 #reivindicamos {
@@ -175,7 +170,7 @@ img{
 
 #reivindicamos div p {
     font-size: 1.25rem;
-    width: 530px;
+    width: 440px;
     height: 64px;
     text-align:center;
     line-height: 175%;
@@ -230,20 +225,6 @@ footer div .top img {
 
 /* HTML DE NOSOTROS*/
 
-.nosotros-1{
-    width: 100%;
-    background-color:red;
-}
-
-.nosotros-2{
-    width: 100%;
-    background-color: blue;
-}
-
-.nosotros-3{
-    width: 100%;
-    background-color: green;
-}
 
 /* HTML DE CONTACTO*/
 
@@ -321,4 +302,29 @@ footer div .top img {
 
 .body-contacto{
     height: 936px;
+}
+
+/*PANTALLAS > o = a 720px*/
+
+@media (min-width: 720px){
+    img {
+    }
+}
+
+/*PANTALLAS > o = a 992px*/
+
+@media (min-width: 992px){
+
+   .navbar{
+        display: none;
+    }
+
+    img {
+    }
+}
+
+@media (max-width: 991px){
+    .navbar1{
+        display: none;
+    }
 }
