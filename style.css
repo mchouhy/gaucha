@@ -85,14 +85,13 @@ header {
 /*ESTILOS GENERALES DEL INDEX*/
 
 .img-index {
-    width: 476px;
-    height: 600px;
+    width: 414px;
     margin-bottom: 85px;
 }
 
 .p-index {
     font-size: 1.25rem;
-    width: 440px;
+    width: 414px;
     text-align:center;
     line-height: 175%;
 }
@@ -187,7 +186,6 @@ header {
     align-content:center;
     justify-content: center;
     text-align: center;
-    height: 1400px;
 }
 
 /* ESTILOS SÉPTIMA SECCIÓN DEL INDEX*/
@@ -353,8 +351,7 @@ footer div .top img {
 
 @media (min-width: 768px){
     .img-index{
-        width: 550px;
-        height: 700px;
+        width: 500px;
         margin-bottom: 85px;
     }
 
@@ -365,16 +362,12 @@ footer div .top img {
     }
 
     #artesanales-unicas{
-        margin-bottom: 150px;
+        margin-bottom: 85px;
     }
 
     #doble-imagen-colores{
-        margin-bottom: 85px;
+        margin-bottom: 75px;
     }
-}
-
-@media (max-width: 767px) {
-
 }
 
 /*PANTALLAS > o = a 992px*/
