@@ -4,7 +4,7 @@
 
 body {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1400px;
     background-color:  #e8e4e2;
     margin: auto;
     padding: auto;
@@ -20,10 +20,11 @@ a {
 }
 
 a:hover {
-    color: gray;
+    color: gray !important;
 }
 
-/*ESTILOS DE LA BARRA DE NAVEGACIÓN*/
+
+/*ESTILOS GENERALES DE LA BARRA DE NAVEGACIÓN*/
 
 header {
     background-color: #e8e4e2;
@@ -35,13 +36,24 @@ header {
     background-color: #e8e4e2 !important;
 }
 
-
 .navbar-brand{
     font-size: 2.10rem;
 }
 
-.nav-item{
+.nav-item {
     text-align: center;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:hover {
+    color: gray;
+}
+
+.navbar-toggler-icon {
+    border-radius: none;
 }
 
 .navbar1 {
@@ -69,10 +81,28 @@ header {
     margin-left: 60px;
     margin-right: 60px;
 }
-    
-/*ESTILOS SECCIONES DEL INDEX*/
 
-/*PRIMERA SECCIÓN INDEX*/
+/*ESTILOS GENERALES DEL INDEX*/
+
+.img-index {
+    width: 476px;
+    height: 600px;
+    margin-bottom: 85px;
+}
+
+.p-index {
+    font-size: 1.25rem;
+    width: 440px;
+    text-align:center;
+    line-height: 175%;
+}
+
+.carousel-index {
+    margin-bottom: 85px;
+    max-width: 696px;
+}
+
+/*ESTILOS PRIMERA SECCIÓN DEL INDEX*/
 
 #diseños-atemporales{
     margin-bottom: 85px;
@@ -85,21 +115,7 @@ header {
     align-content: center;
     }
 
-img{
-    width: 440px;
-    height: 600px;
-    margin-bottom: 85px;
-}
-
-
-.p-atemporales p{
-    font-size: 1.25rem;
-    width: 440px;
-    text-align:center;
-    line-height: 175%;
-}
-
-/*SEGUNDA SECCIÓN INDEX*/
+/* ESTILOS SEGUNDA SECCIÓN DEL INDEX*/
 
 #doble-imagen{
     background-color: none;
@@ -115,11 +131,7 @@ img{
     justify-content: center;
 }
 
-#doble-imagen img{
-    width: 440px;
-}
-
-/*TERCERA SECCIÓN INDEX*/
+/* ESTILOS TERCERA SECCIÓN DEL INDEX*/
 
 #artesanales-unicas{
     margin-bottom: 85px;
@@ -130,14 +142,7 @@ img{
     justify-content: center;
 }
 
-#artesanales-unicas div p {
-    font-size: 1.25rem;
-    width: 440px;
-    text-align:center;
-    line-height: 175%;
-}
-
-/*CUARTA SECCIÓN INDEX*/
+/* ESTILOS CUARTA SECCIÓN DEL INDEX*/
 
 
 #doble-imagen-colores {
@@ -155,9 +160,7 @@ img{
     height: 1350px;
 }
 
-
-
-/*QUINTA SECCIÓN INDEX*/
+/* ESTILOS QUINTA SECCIÓN DEL INDEX*/
 
 #reivindicamos {
     margin-bottom: 85px;
@@ -168,15 +171,7 @@ img{
     justify-content: center;
 }
 
-#reivindicamos div p {
-    font-size: 1.25rem;
-    width: 440px;
-    height: 64px;
-    text-align:center;
-    line-height: 175%;
-}
-
-/*SEXTA SECCIÓN INDEX*/
+/* ESTILOS SEXTA SECCIÓN DEL INDEX*/
 
 #final-index {
     background-color: none;
@@ -195,7 +190,10 @@ img{
     height: 1400px;
 }
 
-/*FOOTER*/
+/* ESTILOS SÉPTIMA SECCIÓN DEL INDEX*/
+
+
+/*ESTILOS DEL FOOTER*/
 
 footer {
     width: 100%;
@@ -204,7 +202,7 @@ footer {
 footer div {
     width: 100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     vertical-align: middle;
 }
 
@@ -225,6 +223,53 @@ footer div .top img {
 
 /* HTML DE NOSOTROS*/
 
+
+.col-nosotros-big{
+    padding: 0;
+}
+
+.col-nosotros-big-p {
+    height: 100;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:justify;
+}
+
+.col-nosotros-big-p-1 {
+    text-align: center;
+}
+
+.p-nosotros-big {
+    width: 95%;
+    font-size: 1.25rem;
+}
+
+.img-nosotros {
+    width: 100%;
+    height: 100%;
+}
+
+.img-nosotros-1 {
+    height: 633px;
+}
+
+.row-nosotros-6 {
+    margin-bottom: 85px;
+}
+
+.col-nosotros-small {
+    height: 770px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.col-nosotros-small-p {
+    font-size: 1.5rem;
+
+}
 
 /* HTML DE CONTACTO*/
 
@@ -304,27 +349,50 @@ footer div .top img {
     height: 936px;
 }
 
-/*PANTALLAS > o = a 720px*/
+/*PANTALLAS > o = a 768px*/
 
-@media (min-width: 720px){
-    img {
+@media (min-width: 768px){
+    .img-index{
+        width: 550px;
+        height: 700px;
+        margin-bottom: 85px;
     }
+
+    .p-index {
+        font-size: 1.25rem;
+        width: 575px;
+        text-align:center;
+    }
+
+    #artesanales-unicas{
+        margin-bottom: 150px;
+    }
+
+    #doble-imagen-colores{
+        margin-bottom: 85px;
+    }
+}
+
+@media (max-width: 767px) {
+
 }
 
 /*PANTALLAS > o = a 992px*/
 
 @media (min-width: 992px){
-
-   .navbar{
+    .navbar{
         display: none;
     }
-
-    img {
+    .container-nosotros-small {
+        display:none;
     }
 }
 
 @media (max-width: 991px){
     .navbar1{
+        display: none;
+    }
+    .container-nosotros-big {
         display: none;
     }
 }
