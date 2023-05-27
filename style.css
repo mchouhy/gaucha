@@ -3,11 +3,9 @@
 }
 
 body {
-    width: 100%;
-    max-width: 1400px;
     background-color:  #e8e4e2;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     font-family: 'Lora', serif;
     color: #1D1D1A;
 }
@@ -29,7 +27,9 @@ a:hover {
 header {
     background-color: #e8e4e2;
     width: 100%;
-    height: 160px;
+    height: 100px;
+    margin-bottom: 5rem;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -60,136 +60,65 @@ header {
     background-color: none;
     height: 100%;
     display: grid;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
 
 .navbar1 .navbardiv {
     background-color: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items:center;
+    column-gap: 7rem;
 }
 
 .navbar1 .navbardiv a {
     background-color: none;
-    width: 169.74px;
     text-align: center;
 }
 
 .navbar1 .navbardiv .logo-a {
     font-size: 2.10rem;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-/*ESTILOS GENERALES DEL INDEX*/
+/*ESTILOS DEL INDEX*/
+
+#index-main-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 7rem;
+    margin-bottom: 7rem;
+}
+
+#index-main-section1 div{
+    background-color:none;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
 
 .img-index {
-    width: 414px;
-    margin-bottom: 85px;
+    width: 100%;
 }
-
+    
 .p-index {
     font-size: 1.25rem;
-    width: 414px;
+    width: 100%;
     text-align:center;
     line-height: 175%;
 }
 
+#index-main-section2 {
+    margin-bottom: 7rem;
+}
+
 .carousel-index {
-    margin-bottom: 85px;
+    width: 100%;
     max-width: 696px;
 }
-
-/*ESTILOS PRIMERA SECCIÓN DEL INDEX*/
-
-#diseños-atemporales{
-    margin-bottom: 85px;
-}
-
-#diseños-atemporales div{
-    background-color:none;
-    display:flex;
-    justify-content:center;
-    align-content: center;
-    }
-
-/* ESTILOS SEGUNDA SECCIÓN DEL INDEX*/
-
-#doble-imagen{
-    background-color: none;
-    display: flex;
-    justify-content: center;
-}
-
-#doble-imagen div{
-    background-color: none;
-    display:flex;
-    flex-direction: column;
-    align-content:flex-end;
-    justify-content: center;
-}
-
-/* ESTILOS TERCERA SECCIÓN DEL INDEX*/
-
-#artesanales-unicas{
-    margin-bottom: 85px;
-}
-
-#artesanales-unicas div {
-    display: flex;
-    justify-content: center;
-}
-
-/* ESTILOS CUARTA SECCIÓN DEL INDEX*/
-
-
-#doble-imagen-colores {
-    background-color: none;
-    display: flex;
-    justify-content: center;
-}
-
-#doble-imagen-colores div{
-    background-color: none;
-    display:flex;
-    flex-direction: column;
-    align-content:flex-end;
-    justify-content: center;
-    height: 1350px;
-}
-
-/* ESTILOS QUINTA SECCIÓN DEL INDEX*/
-
-#reivindicamos {
-    margin-bottom: 85px;
-}
-
-#reivindicamos div {
-    display: flex;
-    justify-content: center;
-}
-
-/* ESTILOS SEXTA SECCIÓN DEL INDEX*/
-
-#final-index {
-    background-color: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
-}
-
-#final-index div{
-    background-color: none;
-    display:flex;
-    flex-direction: column;
-    align-content:center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* ESTILOS SÉPTIMA SECCIÓN DEL INDEX*/
-
 
 /*ESTILOS DEL FOOTER*/
 
@@ -221,12 +150,48 @@ footer div .top img {
 
 /* HTML DE NOSOTROS*/
 
+#nosotros-main-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 7rem;
+    margin-bottom: 7rem;
+}
+
+.nosotros-main-section1-div-p {
+    display: flex;
+    justify-content: center;
+}
+
+.img-nosotros {
+    width: 100%;
+    height: 100%;
+}
+
+.p-nosotros-small {
+    font-size: 1.25rem;
+    width: 100%;
+    text-align:center;
+    line-height: 175%;
+    width: 95%;
+}
+
+.p-nosotros-small-2 {
+    width: 95%;
+    text-align: justify;
+}
+
+.container-nosotros-big {
+    max-width: 1000px;
+}
 
 .col-nosotros-big{
     padding: 0;
 }
 
 .col-nosotros-big-p {
+    background-color:#e8e4e2;
     height: 100;
     display: flex;
     justify-content:center;
@@ -240,16 +205,7 @@ footer div .top img {
 
 .p-nosotros-big {
     width: 95%;
-    font-size: 1.25rem;
-}
-
-.img-nosotros {
-    width: 100%;
-    height: 100%;
-}
-
-.img-nosotros-1 {
-    height: 633px;
+    font-size: 1rem;
 }
 
 .row-nosotros-6 {
@@ -346,12 +302,13 @@ footer div .top img {
     height: 936px;
 }
 
+/*BREAKPOINT 
+
 /*PANTALLAS > o = a 768px*/
 
-@media (min-width: 768px){
-    .img-index{
-        width: 500px;
-        margin-bottom: 85px;
+@media (min-width: 768px) {
+    .img-index {
+        width: 475px;
     }
 
     .p-index {
@@ -360,12 +317,29 @@ footer div .top img {
         text-align:center;
     }
 
-    #artesanales-unicas{
-        margin-bottom: 85px;
+    .img-nosotros {
+        width: 500px;
     }
 
-    #doble-imagen-colores{
-        margin-bottom: 75px;
+    .p-nosotros-small {
+        font-size: 1.25rem;
+        width: 500px;
+        text-align:center;
+}
+
+    .p-nosotros-small-2 {
+    font-size: 1.25rem;
+    width: 500px;
+    text-align:justify;
+}
+}
+
+@media (max-width: 991px){
+    .navbar1{
+        display: none;
+    }
+    .container-nosotros-big {
+        display: none;
     }
 }
 
@@ -375,16 +349,14 @@ footer div .top img {
     .navbar{
         display: none;
     }
-    .container-nosotros-small {
-        display:none;
-    }
-}
-
-@media (max-width: 991px){
-    .navbar1{
+    #nosotros-main-section1 {
         display: none;
     }
-    .container-nosotros-big {
-        display: none;
+    .body-nosotros {
+        background-color:#fbf8f7;
+    }
+    
+    .header-nosotros{
+        background-color: #fbf8f7;
     }
 }
