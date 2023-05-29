@@ -101,12 +101,14 @@ header {
 }
 
 .img-index {
-    width: 100%;
+    width: 90%;
+    align-self: center;
 }
     
 .p-index {
     font-size: 1.25rem;
-    width: 100%;
+    width: 90%;
+    align-self: center;
     text-align:center;
     line-height: 175%;
 }
@@ -165,20 +167,22 @@ footer div .top img {
 }
 
 .img-nosotros {
-    width: 100%;
+    width: 90%;
+    align-self: center;
     height: 100%;
 }
 
 .p-nosotros-small {
     font-size: 1.25rem;
-    width: 100%;
+    width: 90%;
+    align-self: center;
     text-align:center;
     line-height: 175%;
     width: 95%;
 }
 
 .p-nosotros-small-2 {
-    width: 95%;
+    width: 90%;
     text-align: justify;
 }
 
@@ -205,7 +209,7 @@ footer div .top img {
 
 .p-nosotros-big {
     width: 95%;
-    font-size: 1rem;
+    font-size: 1.20rem;
 }
 
 .row-nosotros-6 {
@@ -302,18 +306,20 @@ footer div .top img {
     height: 936px;
 }
 
-/*BREAKPOINT 
+/*BREAKPOINTS 
 
 /*PANTALLAS > o = a 768px*/
 
 @media (min-width: 768px) {
     .img-index {
-        width: 475px;
+        width: 65%;
+        align-self: center;
     }
 
     .p-index {
         font-size: 1.25rem;
-        width: 575px;
+        width: 50%;
+        align-self: center;
         text-align:center;
     }
 
