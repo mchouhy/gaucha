@@ -17,8 +17,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="body-contacto">
-    <header>
+<body class="contact--body">
+    <header id="header" class="contact-header">
         <nav class="navbar1">
             <div class="navbardiv">
                 <a href="nosotros.html">Nosotros</a>
@@ -56,33 +56,29 @@
         </nav>         
     </header>
 
-    <main>
-        <section class="p-contáctanos">
-            <p>Contáctanos</p>
-        </section>
-        
-        <section class="contact-form">
-            <div class="contáctanos">
-                <a class="a-contacto" href="https://goo.gl/maps/xQ6TUr5KZFQ1mwRKA">Av. de Felipe II, Goya, Madrid</a>
-                <a class="a-contacto" href="#">+34-613-767-425</a></span>
-                <a class="a-contacto" href="#">hola@gaucha.com</a></span>
-                <a class="a-contacto" href="https://www.instagram.com/somosgaucha">Instagram</a></span>
+    <main class="contact--father">
+        <div class="contact--main">
+            <div class="contact--links-father">
+                <p class="contact--links">Contáctanos</p>
+                <a class="contact--links" href="#">+34-613-767-425</a></span>
+                <a class="contact--links" href="#">hola@gaucha.com</a></span>
+                <a class="contact--links" href="https://www.instagram.com/somosgaucha">Instagram</a></span>
+                <a class="contact--links" href="https://goo.gl/maps/xQ6TUr5KZFQ1mwRKA">Av. de Felipe II, Goya,
+                    28009, Madrid</a>
             </div>
-            <div class="formulario">
-                <div>
-                <input class="inputform" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <input class="inputform" type="email" name="email" id="email" placeholder="Correo electrónico">
-                <textarea class="inputform" name="mensaje" id="mensaje" cols="1" rows="4" placeholder="Mensaje" required></textarea>
-                <input class="bottonform" type="submit" value="Enviar">
-                </div>
+            <div class="contact--form">
+                <input class="form-input" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input class="form-input" type="email" name="email" id="email" placeholder="Correo electrónico">
+                <textarea class="form-input" name="mensaje" id="mensaje" cols="1" rows="4" placeholder="Mensaje" required></textarea>
+                <input class="form-button" type="submit" value="Enviar">
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="footer-contacto">
+    <footer class="contact--footer">
         <div>
             <p class="derechos">® Gaucha</p>
-            <a href="contacto.html" class="top"><img src="../icons/icon-arrow-up.png" alt=""></a>
+            <a href="#header" class="top"><img src="../icons/icon-arrow-up.png" alt=""></a>
             <p class="insta"><a href="https://www.instagram.com/somosgaucha">Instagram</a></p>
         </div>
     </footer>
