@@ -15,15 +15,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+    <!--CDN ANIMATE CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-        
+    <!--CDN AOS ANIMATIONS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
     <header id="header">
-        <nav class="navbar1">
+        <nav class="navbar1 animate__animated animate__backInDown">
             <div class="navbardiv">
                 <a href="nosotros.html">Nosotros</a>
                 <a href="coleccion.html">Colección</a>
@@ -32,7 +36,7 @@
                 <a href="contacto.html">Contacto</a>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light animate__animated animate__backInDown">
             <div class="container-fluid navburger">
                 <a class="navbar-brand" href="../index.html">GAUCHA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,144 +64,104 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div>
-                <p>¿CÓMO CUIDAR TU PIEZA GAUCHA?</p>
+    <main class="cuidado-main">
+        <section class="cuidado--main-section">
+            <div class="cuidado--title-container">
+                <p class="cuidado--title animate__animated animate__fadeInUp">¿CÓMO CUIDAR TU PIEZA GAUCHA?</p>
             </div>
-            <div>
-                <img src="../images/index-mano-cerrada.jpeg" alt="">
+            <div class="cuidado--img-container">
+                <img class="cuidado--img animate__animated animate__fadeInUp" src="../images/index-mano-cerrada.jpeg"
+                    alt="">
             </div>
         </section>
-
-        <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        Accordion Item #1
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Evita dormir con tu pieza Gaucha
                     </button>
                 </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">No es recomendable. Para un mejor mantenimiento te recomendamos
+                        quitartela todas las noches y
+                        conservarla en un caja de joyería o bisutería. En lo ideal en un organizador de joyas sintético
+                        de alta calidad y/o de terciopelo suave. Con ello logras evitar que tu pieza Gaucha se exponga
+                        al polvo, las huellas dactilares y los rasguños.</div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        Accordion Item #2
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Evita, en general, que entre en contacto con el agua
                     </button>
                 </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Si bien en principio no es problema, sí puede ser perjudicial si el agua
+                        con la que entre en
+                        contacto no contenga agentes químicos. Si se moja con agua común (al ducharse o al salpicarse
+                        unas gotas) no pasa nada, tan solo hay que asegurarse de secarlas bien para evitar la humedad.
+                        En agua salada hay que mantener cierta precaución, ya que aunque a priori no es perjudicial (e
+                        incluso puede ayudar a limpiarla), si se hace un abuso tu pieza Gaucha puede llegar a rayarse.
+                        Por el contrario, debes evitar que tu pieza Gaucha se moje con el agua de la piscina, spa o
+                        balneario, ya que contienen cloro y otros compuestos que pueden tener efectos negativos en la
+                        pieza.</div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        Accordion Item #3
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        No la utilices cuando realices actividad física
                     </button>
                 </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Hay muchos motivos por los que cada vez que salgas a correr o al
+                        gimnasio deberías dejar tu
+                        pieza Gaucha en cas. Si hay algo seguro que pasará cuando hagas deporte es sudar. Y como todos
+                        sabemos el sudor es una sustancia que puede acabar dañando y ennegreciendo alguno de los metales
+                        con los que están fabricados nuestras piezas. Además, la combinación de nuestro sudor con
+                        ciertos materiales metales, pueden llegar a provocar reacciones alérgicas en nuestras piel, que
+                        no son nada agradables. Obviamente, si el deporte que practicas es la natación, tendrás que
+                        quitartela también (aunque consideres que no sudes), ya que el cloro y los productos que aplican
+                        a las aguas de las piscinas deportivas para su mantenimiento, hacen que los baños y aleaciones
+                        de nuestras piezas se podrían deteriorar.</div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        Accordion Item #3
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Evita que entre en contacto con cosméticos, perfumes y productos químicos
                     </button>
                 </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Nunca apliques productos químicos en nuestras piezas sin consultarnos,
+                        ya que algunos productos
+                        pueden desgastarlas gravemente y provocar que la superficie pierda brillo de forma permanente e
+                        irreparable.</div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        Accordion Item #3
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Limpiala únicamente con un paño suave y seco
                     </button>
                 </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Paños mojados o expuestos a productos químicos, podrían producir las
+                        consecuencias que hemos
+                        explicado anteriormente, por lo que procura siempre limpiar tu pieza Gaucha con paños secos y
+                        suaves.</div>
                 </div>
             </div>
         </div>
-
-
-
-        <section>
-            <div>
-                <div>
-                    <a href="#">Icono</a>
-                    <p>Evita dormir con tu pieza Gaucha</p>
-                </div>
-                <div>
-                    <a href="#">Icono</a>
-                    <p>Evita que entre en contacto con el agua</p>
-                </div>
-                <div>
-                    <a href="#">Icono</a>
-                    <p>No la utilices para hacer ejercicio</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#">Icono</a>
-                    <p>Evita que entre en contacto con el agua</p>
-                </div>
-                <div>
-                    <a href="#">Icono</a>
-                    <p>No la utilices para hacer ejercicio</p>
-                </div>
-            </div>
-        </section>
     </main>
-
     <footer>
         <div>
             <p class="derechos">® Gaucha</p>
@@ -210,6 +174,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
+    <!--CDN AOS ANIMATIONS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
