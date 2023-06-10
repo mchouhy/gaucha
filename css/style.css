@@ -84,7 +84,6 @@ a:hover {
     color: gray !important;
 }
 
-
 /* FOOTER */
 
 footer {
@@ -231,6 +230,45 @@ footer div .top img {
     font-size: 1.20rem;
 }
 
+/* COLECCIÓN */
+
+.coleccion--header{
+    margin-bottom: 3rem;
+}
+
+.coleccion--main-container {
+    margin-bottom: 4rem;
+}
+
+.coleccion--main-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.coleccion--main-title h3 {
+    font-size: 1.5rem;
+}
+
+.card-body {
+    background-color:#fbf8f7;
+}
+
+.btn {
+    background-color: #b2937d;
+    border: white;
+    color: white;
+}
+
+.btn:hover {
+    background-color:#8e7564 !important;
+    color: white !important;
+}
+
+/* CUIDADO */
+
+
+
 /* CONTACTO */
 
 .contact-header{
@@ -238,32 +276,45 @@ footer div .top img {
 }
 
 .contact--main {
-    height: 100%;
     margin-top: 2rem;
     margin-bottom: 12rem;
     background-color: none;
     display: flex;
     flex-direction:column;
-    align-items: center;
+    align-items:center;
     gap: 3rem;
 }
 
 .contact--links-father {
-    background-color:#ae764e;
+    background-color:#b2937d;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align:center;
     padding: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contact--title {
+    width: 100%;
+    align-self: center;
+    text-align: left;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 2;
+    padding: 0;
+    padding-bottom: 1rem;
 }
 
 .contact--links {
-    width: 70%;
+    width: 100%;
     align-self: center;
     text-align: left;
-    color: #fbf8f7;
-    font-size: 1.25rem;
+    color: white;
+    font-size: 1.10rem;
     line-height: 2;
     padding: 0;
 }
@@ -278,6 +329,7 @@ footer div .top img {
     background-color:none;
     display: flex;
     flex-direction: column;
+    gap: 1.75rem;
 }
 
 .form-input {
@@ -287,7 +339,23 @@ footer div .top img {
     color: #1D1D1A;
     padding: 0.625rem;
     border-radius: 0.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    border: 1px solid;
+    border-top: hidden;
+    border-left:hidden;
+    border-right: hidden;
+    display: flex;
+    width: 100%;
+}
+
+.form-message {
+    height: 6.8rem;
+    min-height: 6.8rem;
+    font-family: 'Lora', serif;
+    color: #1D1D1A;
+    padding: 0.625rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0;
     border: 1px solid;
     border-top: hidden;
     border-left:hidden;
@@ -297,7 +365,7 @@ footer div .top img {
 }
 
 .form-button{
-    background-color: #ae764e;
+    background-color: #b2937d;
     color: #fbf8f7;
     text-decoration: underline;
     height: 3.5rem;
@@ -315,29 +383,29 @@ footer div .top img {
 /*PANTALLAS > o = a 768px*/
 
 @media (min-width: 768px) {
-    .img-index {
+.img-index {
         width: 65%;
         align-self: center;
     }
 
-    .p-index {
+.p-index {
         font-size: 1.25rem;
         width: 50%;
         align-self: center;
         text-align:center;
     }
 
-    .img-nosotros {
+.img-nosotros {
         width: 500px;
     }
 
-    .p-nosotros-small {
+.p-nosotros-small {
         font-size: 1.25rem;
         width: 500px;
         text-align:center;
 }
 
-    .p-nosotros-small-2 {
+.p-nosotros-small-2 {
     font-size: 1.25rem;
     width: 500px;
     text-align:justify;
@@ -353,15 +421,21 @@ footer div .top img {
 }
 
 .contact--links-father {
-    max-width: 30.625rem;
+    max-width: 26rem;
     margin-left: 2rem;
 }
 
 .contact--form {
-    max-width: 30.625rem;
+    width: 100%;
+    max-width: 26rem;
     margin-right: 2rem;
+    justify-content:end;
 }
 
+.coleccion--main-container .row {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 }
 
 @media (max-width: 991px){
