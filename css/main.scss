@@ -1,24 +1,47 @@
-/* VARIABLES, MIXINS Y MAPS */
+/* VARIABLES, MIXINS & MAPS */
 @import "../scss/utilities/variables";
+@import "../node_modules/bootstrap/scss/accordion";
 
 /* RESET */
 @import "../scss/reset/reset";
 
-/* LAYOUTS & COMPONENTS */
+/* HEADER */
 @import "../scss/layouts/header";
+
+/* NAVBAR */
 @import "../scss/components/navbar";
+
+/* FOOTER */
 @import "../scss/layouts/footer";
+
+/* INDEX */
 @import "../scss/layouts/index";
+
+/* INDEX -- CAROUSEL */
 @import "../scss/components/carousel";
+
+/* NOSOTROS */
 @import "../scss/layouts/nosotros";
+
+/* COLECCIÓN */
 @import "../scss/layouts/coleccion";
+
+/* COLLECCIÓN -- CARDS */
 @import "../scss/components/cards";
+
+/* CUIDADO */
 @import "../scss/layouts/cuidado";
+
+/* CUIDADO -- ACCORDIONS */
 @import "../scss/components/accordions";
+
+/* CONTACTO */
 @import "../scss/layouts/contacto";
+
+/* CONTACTO -- FORMS */
 @import "../scss/components/forms";
 
-/* VIEWS */
+/* BREAKPOINTS */
 @import "../scss/views/breakpoints";
 
 

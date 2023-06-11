@@ -1,4 +1,5 @@
-/* VARIABLES, MIXINS Y MAPS */
+@charset "UTF-8";
+/* VARIABLES, MIXINS & MAPS */
 /* RESET */
 * {
   box-sizing: border-box;
@@ -17,7 +18,7 @@ html, body {
   width: 100vw !important;
 }
 
-/* LAYOUTS & COMPONENTS */
+/* HEADER */
 header {
   width: 100%;
   background-color: #e8e4e2;
@@ -33,6 +34,7 @@ header {
   margin-bottom: 0;
 }
 
+/* NAVBAR */
 .navbar {
   background-color: #e8e4e2 !important;
 }
@@ -82,6 +84,7 @@ a:hover {
   color: gray !important;
 }
 
+/* FOOTER */
 footer {
   width: 100%;
 }
@@ -103,6 +106,7 @@ footer div .derechos {
   font-size: 0.9rem;
 }
 
+/* INDEX */
 #index-main-section1, #nosotros-main-section1 {
   display: flex;
   flex-direction: column;
@@ -131,6 +135,7 @@ footer div .derechos {
   line-height: 175%;
 }
 
+/* INDEX -- CAROUSEL */
 #index-main-section2 {
   margin-bottom: 7rem;
 }
@@ -139,6 +144,7 @@ footer div .derechos {
   max-width: 43.5rem;
 }
 
+/* NOSOTROS */
 .nosotros-main-section1-div-p {
   display: flex;
   justify-content: center;
@@ -208,6 +214,7 @@ footer div .derechos {
   font-size: 1.2rem;
 }
 
+/* COLECCIÓN */
 .coleccion--main-container {
   margin-bottom: 4rem;
 }
@@ -221,6 +228,7 @@ footer div .derechos {
   font-size: 1.5rem;
 }
 
+/* COLLECCIÓN -- CARDS */
 .row-cols-sm-2 {
   animation-fill-mode: backwards;
 }
@@ -239,6 +247,7 @@ footer div .derechos {
   color: white !important;
 }
 
+/* CUIDADO */
 .cuidado-main {
   margin-bottom: 5rem;
 }
@@ -265,6 +274,7 @@ footer div .derechos {
   animation-fill-mode: backwards;
 }
 
+/* CUIDADO -- ACCORDIONS */
 .accordion-item {
   background-color: #fbf8f7;
 }
@@ -273,6 +283,7 @@ footer div .derechos {
   background-color: #e8e4e2;
 }
 
+/* CONTACTO */
 .contact--main {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -322,6 +333,7 @@ footer div .derechos {
   color: #e8e4e2 !important;
 }
 
+/* CONTACTO -- FORMS */
 .contact--form {
   height: 100%;
   width: 90%;
@@ -373,7 +385,7 @@ footer div .derechos {
   color: white;
 }
 
-/* VIEWS */
+/* BREAKPOINTS */
 @media (min-width: 768px) {
   .img-index {
     width: 65%;
