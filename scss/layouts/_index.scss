@@ -1,0 +1,26 @@
+#index-main-section1 {
+    @include flex-column-center;
+    text-align: center;
+    gap: 7rem;
+    margin-bottom: 7rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+    }
+}
+
+.img-index {
+    width: 90%;
+    align-self: center;
+    animation-fill-mode: backwards;
+}
+
+.p-index {
+    font-size: map-get($map: $content-font-sizes, $key: hero-index-text);
+    width: 90%;
+    align-self: center;
+    text-align: center;
+    line-height: 175%;
+}

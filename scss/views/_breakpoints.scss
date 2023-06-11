@@ -1,0 +1,100 @@
+@media (min-width: 768px) {
+    .img-index {
+            width: 65%;
+            align-self: center;
+        }
+    
+    .p-index {
+            font-size: 1.25rem;
+            width: 50%;
+            align-self: center;
+            text-align:center;
+        }
+    
+    .img-nosotros {
+            width: 500px;
+        }
+    
+    .p-nosotros-small {
+            font-size: 1.25rem;
+            width: 500px;
+            text-align:center;
+    }
+    
+    .p-nosotros-small-2 {
+        font-size: 1.25rem;
+        width: 500px;
+        text-align:justify;
+    }
+    
+    .cuidado--img {
+        width: 65%;
+        align-self: center;
+        animation-fill-mode: backwards;
+    }
+    
+    .accordion-flush {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    
+    .accordion-body {
+        text-align: justify;
+    }
+    
+    .contact--main {
+        height: 100%;
+        margin-top: 5rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 29rem;
+    }
+    
+    .contact--links-father {
+        max-width: 26rem;
+        margin-left: 2rem;
+    }
+    
+    .contact--form {
+        width: 100%;
+        max-width: 26rem;
+        margin-right: 2rem;
+        justify-content:end;
+    }
+    
+    .coleccion--main-container .row {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    }
+    
+    @media (max-width: 991px){
+        .navbar1{
+            display: none;
+        }
+        .container-nosotros-big {
+            display: none;
+        }
+    }
+
+    @media (min-width: 992px){
+        .navbar{
+            display: none;
+        }
+        #nosotros-main-section1 {
+            display: none;
+        }
+        .body-nosotros {
+            background-color:#fbf8f7;
+        }
+        
+        .header-nosotros{
+            background-color: #fbf8f7;
+        }
+    
+        .accordion-flush {
+            margin-left: 15rem;
+            margin-right: 15rem;
+        }
+    }

@@ -1,0 +1,17 @@
+.row-cols-sm-2 {
+    animation-fill-mode: backwards;
+}
+
+.card-body {
+    background-color:map-get($map: $color-palet, $key: tertiary-background-color);
+}
+
+.btn {
+    background-color: map-get($map: $color-palet, $key: secondary-background-color);
+    border: map-get($map: $color-palet, $key: border-button-color);
+    color: map-get($map: $color-palet, $key: primary-button-color);
+    &:hover {
+        background-color: map-get($map: $color-palet, $key: secondary-background-color) !important;
+        color: map-get($map: $color-palet, $key: border-button-color) !important;
+    }
+}

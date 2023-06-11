@@ -1,0 +1,7 @@
+.accordion-item {
+    background-color: map-get($map: $color-palet, $key: tertiary-background-color);
+}
+
+.accordion-button {
+    background-color: map-get($map: $color-palet, $key: primary-background-color);
+}

@@ -1,0 +1,26 @@
+footer {
+    width: 100%;
+
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        vertical-align: middle;
+
+        .top {
+            img {
+                width: 1.25rem;
+                height: 1.25rem;
+                margin: 0;
+                padding: 0;
+            }
+
+            &:hover {
+                color: map-get($map: $color-palet, $key: primary-hover-color);
+            }
+        }
+
+        .derechos {
+            font-size: map-get($map: $nav-font-sizes, $key: nav-item);
+        }
+    }
+}

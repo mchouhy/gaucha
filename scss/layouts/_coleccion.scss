@@ -1,0 +1,11 @@
+.coleccion--main-container {
+    margin-bottom: 4rem;
+    .coleccion--main-title {
+        @include flex-justify-center;
+        margin-bottom: 2rem;
+        animation-fill-mode: backwards;
+        h3 {
+            font-size: map-get($map: $content-font-sizes, $key: hero-title);
+        }
+    }
+}

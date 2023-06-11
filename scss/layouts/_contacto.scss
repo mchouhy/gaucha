@@ -1,0 +1,47 @@
+.contact--main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: none;
+    @include flex-column-center;
+    gap: 3rem;
+    animation-fill-mode: backwards;
+
+    .contact--links-father {
+        background-color: map-get($map: $color-palet, $key: secondary-background-color);
+        height: 100%;
+        width: 100%;
+        @include flex-column-justify-center;
+        text-align: center;
+        padding: 4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .contact--title {
+            width: 100%;
+            align-self: center;
+            text-align: left;
+            color: white;
+            font-size: map-get($map: $content-font-sizes, $key: contact-title);
+            line-height: 2;
+            padding: 0;
+            padding-bottom: 1rem;
+            text-decoration: none;
+
+            &:hover {
+                color: map-get($map: $color-palet, $key: secondary-hover-color) !important;
+            }
+        }
+        .contact--links {
+            width: 100%;
+            align-self: center;
+            text-align: left;
+            color: map-get($map: $color-palet, $key:secondary-font-color);
+            font-size: map-get($map: $content-font-sizes, $key: contact-links);
+            line-height: 2;
+            padding: 0;
+            &:hover {
+                color: map-get($map: $color-palet, $key: tertiary-hover-color) !important;
+            }
+        }
+    }
+}
