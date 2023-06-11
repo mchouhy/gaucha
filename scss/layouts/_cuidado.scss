@@ -15,16 +15,16 @@
                 font-size: map-get($map: $content-font-sizes, $key: hero-title);
                 animation-fill-mode: backwards;
             }
-
-            .cuidado--img-container {
-                @extend .cuidado--title-container;
-
-                .cuidado--img {
-                    width: 90%;
-                    align-self: center;
-                    animation-fill-mode: backwards;
-                }
-            }
         }
     }
 }
+
+.cuidado--img-container {
+    @extend .cuidado--title-container;
+
+        .cuidado--img {
+            width: 90%;
+            align-self: center;
+            animation-fill-mode: backwards;
+        }
+    }

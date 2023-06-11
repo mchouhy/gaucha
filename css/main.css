@@ -250,15 +250,16 @@ footer div .derechos {
   gap: 2rem;
   margin-bottom: 3rem;
 }
-.cuidado-main .cuidado--main-section .cuidado--title-container, .cuidado-main .cuidado--main-section .cuidado--title-container .cuidado--img-container {
+.cuidado-main .cuidado--main-section .cuidado--title-container, .cuidado-main .cuidado--main-section .cuidado--img-container {
   display: flex;
   flex-direction: column;
 }
-.cuidado-main .cuidado--main-section .cuidado--title-container .cuidado--title {
+.cuidado-main .cuidado--main-section .cuidado--title-container .cuidado--title, .cuidado-main .cuidado--main-section .cuidado--img-container .cuidado--title {
   font-size: 1.5rem;
   animation-fill-mode: backwards;
 }
-.cuidado-main .cuidado--main-section .cuidado--title-container .cuidado--img-container .cuidado--img {
+
+.cuidado--img-container .cuidado--img {
   width: 90%;
   align-self: center;
   animation-fill-mode: backwards;
